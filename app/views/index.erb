@@ -1,0 +1,49 @@
+<div id="index_background">
+
+</div>
+
+<div id="header">
+  <h1 class="index">The Command Tower</h1>
+  <p>Placeholder Text</p>
+</div>
+
+<div id="login">
+  <p>View your libraries</p>
+  <form action="/login" method="post">
+    <input type="text" name="username" placeholder="Username">
+    <br>
+    <input type="password" name="password" placeholder="Password">
+    <br>
+    <input type="submit" value="Login">
+  </form>
+</div>
+
+ <div id="signup">
+  <p>New Planeswalker? Sign Up!</p>
+  <form action="/signup" method="POST">
+    <input type="text" name="username" placeholder="Enter user name">
+    <br>
+    <input type="text" name="fullname" placeholder="Full name">
+    <br>
+    <input type="text" name="email" placeholder="Email">
+    <br>
+    <input type="password" name="password" placeholder="Password">
+    <br>
+    <input type="submit" value="Create Account">
+  </form>
+  </div>
+
+  <div id="deck_search">
+    <p>Find a Deck</p>
+    <form action="/deck_search" method="post">
+      <input type="text" name="deck[commander]" placeholder="Commander">
+      <br>
+      <input type="text" name="deck[color_identity]" placeholder="Colors">
+      <br>
+      <input type="submit" value="Search">
+    </form>
+  </div>
+
+  <div id="recent_decks">
+    <p>Recently Created Decks<p>
+  </div>

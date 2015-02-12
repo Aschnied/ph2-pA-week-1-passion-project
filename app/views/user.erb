@@ -1,0 +1,20 @@
+<h1>Welcome to your page</h1>
+
+<div id="deck_create">
+  <p>Create a deck</p>
+  <form action="/users/<%= @user.id %>/decks" method="post">
+    <input type="text" name="name" placeholder="Deck Name">
+    <br>
+    <input type="text" name="commander" placeholder="Commander">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<form action>
+
+<div id="user_decks">
+<p>Your Decks<p>
+  <% @decks.each do |deck| %>
+    <%= deck.name %>
+  <% end %>
+</div>
